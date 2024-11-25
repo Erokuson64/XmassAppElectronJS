@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+           <h1>🎄 Merry Christmas! 🎄</h1>
+           <p>Wishing you a season of joy and a new year filled with happiness.</p>
+           <button class="button" id="open-gift">🎁 Open Gift</button>
+           <div id="countdown" class="hidden">
+            <p>Time until Christmas Eve:</p>
+            <span id="timer"></span>
+          </div>
+           <button id="toggle-music">🔇 Turn Off Music</button>
+        </div>
+        <div class="overlay-image">
+            <img src="./assets/images/XmasTree.jpg" alt="Overlay">
+    </div>
+    <audio id="background-music" src="./assets/sounds/XmasMusic.mp3" autoplay loop></audio>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', () => {
+            alert('🎁 Happy Holidays!');
+        });
+    </script>
+    <script src="renderer.js"></script>
+</body>
+</html>
